@@ -1,0 +1,126 @@
+/* Overview.css */
+
+.overview-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    color: #333;
+    background-color: white;
+    width: 100%;
+    margin: 0 auto; /* Center the container */
+    margin-left: 200px;
+}
+
+.overview-header {
+    text-align: center;
+    margin-bottom: 20px; /* Add space below header */
+}
+
+.overview-title {
+    font-size: 2.5rem;
+    color: #007bff; /* Emphasized color */
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+.overview-intro-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.overview-intro {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5; /* Improved readability */
+}
+
+.overview-features {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.features-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #555; /* Darker for contrast */
+    font-weight: bold; /* Make the title bolder */
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px; /* Slightly increased border radius */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Deeper shadow */
+    width: 180px; /* Adjusted width for consistency */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation for both */
+}
+
+.feature-card:hover {
+    transform: translateY(-5px); /* Hover effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.overview-counter {
+    margin: 20px 0;
+    text-align: center;
+    font-weight: bold; /* Bold for emphasis */
+}
+
+.user-count {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff; /* Use the same color for consistency */
+}
+
+.overview-cta {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Added transform transition */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for button */
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Darker on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.cta-button:focus {
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add focus shadow */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .features-grid {
+        flex-direction: column; /* Stack cards on smaller screens */
+        align-items: center; /* Center alignment */
+    }
+
+    .feature-card {
+        width: 90%; /* Full width on small screens */
+    }
+
+    .overview-title {
+        font-size: 2rem; /* Smaller title on mobile */
+    }
+
+    .overview-intro {
+        font-size: 1rem; /* Smaller intro text on mobile */
+    }
+}

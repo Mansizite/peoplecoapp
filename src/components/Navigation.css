@@ -1,0 +1,83 @@
+/* Main Navigation and Sidebar */
+.navbar {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    padding: 0;
+  
+}
+
+/* CSS for the navbar image */
+.navbar .container-fluid img {
+    width: 100%; /* Keeps original width */
+    height: 80px; /* Set the height as desired */
+    object-fit: contain; /* Prevents distortion */
+    padding: 10px 0; /* Adds spacing around the image */
+}
+
+/* Sidebar */
+#sidebar {
+    width: 10rem;
+    height: 100vh;
+    background: #ffffff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+}
+
+#sidebar li {
+    list-style: none;
+    padding: 15px 10px;
+}
+
+#sidebar li:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+#sidebar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    padding: 10px 15px;
+    transition: color 0.3s, font-weight 0.3s;
+}
+
+#sidebar a:hover {
+    color: purple;
+}
+
+#sidebar a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Active Link Styling */
+#sidebar a[style*="purple"] {
+    color: purple;
+    font-weight: bold;
+}
+
+/* Button */
+.w-45 {
+    width: 80%; /* Adjust for centering */
+}
+
+.h-15 {
+    height: 40px;
+}
+
+.w-45 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+.w-45 button:hover {
+    background-color: #ddd;
+    border-color: #bbb;
+}
